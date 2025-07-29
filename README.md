@@ -1,181 +1,211 @@
 <div align="center">
-  <br />
-    <a href="https://www.jsmastery.pro/ultimate-next-course" target="_blank">
-      <img src="https://github.com/user-attachments/assets/769882e6-bae6-4932-a117-829cf34f809f" alt="Project Banner">
-    </a>
-  <br />
-
-  <div>
+    <div>
     <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
     <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="nextdotjs" />
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
     <img src="https://img.shields.io/badge/-MongoDB-black?style=for-the-badge&logoColor=white&logo=mongodb&color=47A248" alt="mongodb" />
     <img src="https://img.shields.io/badge/-ShadCN_UI-black?style=for-the-badge&logoColor=white&logo=shadcnui&color=000000" alt="shadcnui" />
-    <img src="https://img.shields.io/badge/-Open_AI-black?style=for-the-badge&logoColor=white&logo=openai&color=412991" alt="openai" />
+    <img src="https://img.shields.io/badge/-Google_AI-black?style=for-the-badge&logoColor=white&logo=google&color=4285F4" alt="google-ai" />
   </div>
 
-  <h3 align="center">The Ultimate Next.js Course</h3>
+  <h3 align="center">DevFlow - Developer Community Platform</h3>
 
    <div align="center">
-     Build this project step by step with our detailed course on <a href="https://www.jsmastery.pro" target="_blank"><b>JavaScript Mastery PRO</b></a> Website. Join the JSM PRO family!
+     A community-driven platform for developers to ask questions, share knowledge, and grow together. Built with Next.js, MongoDB, and AI-powered features.
     </div>
 </div>
 
 ## 📋 <a name="table">Table of Contents</a>
 
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🔗 [Assets](#links)
+1. [Introduction](#introduction)
+2. [Tech Stack](#tech-stack)
+3. [Features](#features)
+4. [Quick Start](#quick-start)
+5. [Project Structure](#project-structure)
+6. [Contributing](#contributing)
 
-## 🚨 Course
+## <a name="introduction">Introduction</a>
 
-This repository contains the code corresponding to an in-depth course available on our <a href="https://jsmastery.pro/" target="_blank"><b>JavaScript Mastery Pro Website</b></a>.
+DevFlow is a modern, full-stack developer community platform inspired by StackOverflow, enhanced with cutting-edge AI capabilities powered by **Google's Gemini AI**, gamification features, and personalized recommendations. Built using the latest Next.js features, this platform demonstrates advanced rendering strategies including SSG, ISR, SSR, PPR, Server Functions, Caching, and Revalidation to deliver a production-ready application.
 
-If you prefer visual learning, this is the perfect resource for you. Follow our course to learn how to build projects like these step-by-step in a beginner-friendly manner
+The platform leverages MongoDB for robust data management, NextAuth (Auth.js) for versatile authentication (Email/Password, GitHub, Google), and features beautiful styling with TailwindCSS and ShadCN UI components. DevFlow empowers developers to ask questions, share knowledge, utilize AI-powered responses through Google's Gemini AI, engage through voting systems, organize content effectively, and discover opportunities—all while enjoying gamified elements like badges and community rewards.
 
-<a href="https://www.jsmastery.pro/ultimate-next-course" target="_blank">
-  <img src="https://github.com/user-attachments/assets/54ef6cd0-1f00-4989-a6a5-3f77ca3f68a2" style="width: 150px; height: auto;" />
-</a>
+## <a name="tech-stack">Tech Stack</a>
 
-## <a name="introduction">🤖 Introduction</a>
+- **Frontend**: Next.js 15, TypeScript, TailwindCSS
+- **UI Components**: ShadCN UI, Radix UI
+- **Authentication**: NextAuth (Auth.js)
+- **Database**: MongoDB with Mongoose
+- **AI Integration**: Google Gemini AI
+- **Form Handling**: React Hook Form with Zod validation
+- **Editor**: MDX Editor for rich text content
+- **Deployment**: Vercel
+- **Job API**: RapidAPI
+- **Rich Text Editor**: TinyMCE
 
-In this in-depth course, you’ll master Next.js by building and deploying a full-stack project, Devoverflow—a community-driven platform inspired by StackOverflow, enhanced with AI-powered answers, gamification, recommendations, and more. Using the latest features of Next.js, you’ll explore rendering strategies like SSG, ISR, SSR, PPR, Server Functions, Caching, & Revalidation to create a production-ready application.
+## <a name="features">Features</a>
 
-The project uses MongoDB for a robust database layer, NextAuth (Auth.js) for versatile authentication options (Email/Password, GitHub, Google), and sleek styling with TailwindCSS and ShadCN UI. Devoverflow enables developers to ask questions, post answers, leverage AI for responses, vote, organize content, contribute, discover jobs, and explore recommended topics—all while engaging with gamified elements like badges and rewards.
+### 🔐 **Authentication & User Management**
 
-If you're getting started and need assistance or encounter any bugs, you can join our active PRO Discord community, which has over 5k+ members. It's a place where people help each other out.
+- Secure sign-in with NextAuth supporting Email/Password, Google, and GitHub
+- User profiles with badges and engagement history
+- Community browsing with search and filters
 
-## <a name="tech-stack">⚙️ Tech Stack</a>
+### 📝 **Question & Answer System**
 
-- Zod
-- Next.js
-- NextAuth
-- Open AI
-- MongoDB
-- ShadCN UI
-- TypeScript
-- TailwindCSS
-- React Hook Form
+- Rich question posting with MDX editor (light/dark modes)
+- AI-powered answer generation using Google Gemini
+- Advanced answer filtering (newest, most-voted) with pagination
+- Comprehensive voting system for questions and answers
 
-## <a name="features">🔋 Features</a>
+### 🎯 **Smart Features**
 
-👉 **Authentication**: Secure sign-in with NextAuth, supporting Email/Password, Google, and GitHub.
+- Personalized recommendations on the home page
+- Global search across questions, users, and tags
+- Bookmark system for saving questions
+- View counter for tracking question popularity
 
-👉 **Home Page**: Displays questions with filters, search, and pagination for easy navigation.
+### 🏷️ **Content Organization**
 
-👉 **Recommendations**: Personalized suggestions on the home page.
+- Tag-based question categorization
+- Collections for organized saved content
+- Tag pages with question counts and search
 
-👉 **Complex Layout**: Organized layout with popular questions and tags in view.
+### 💼 **Job Discovery**
 
-👉 **Question Details**: View questions with rich content, including images and code blocks.
+- Job finder with location-based filtering
+- Search and filter capabilities for opportunities
 
-👉 **Voting**: Upvote/downvote on questions to highlight helpful content.
+### 🎮 **Gamification**
 
-👉 **View Counter**: Tracks the number of views for each question.
+- Badge system for user achievements
+- Community rewards and engagement tracking
+- User statistics and progress visualization
 
-👉 **Bookmarking**: Save questions for quick access later.
+### 📱 **User Experience**
 
-👉 **Answer Posting**: MDX editor with light/dark modes for submitting answers.
+- Fully responsive design (desktop, tablet, mobile)
+- High-performance loading and smooth interactions
+- Dark/light theme support
+- Edit & delete functionality with proper authorization
 
-👉 **AI Answer Generation**: Get AI-generated responses to questions.
-
-👉 **Answer Filtering**: Sort answers by newest or most-voted, with pagination.
-
-👉 **Answer Voting**: Upvote/downvote answers to rank quality responses.
-
-👉 **Collections**: Organized saved questions with filters, search, and pagination.
-
-👉 **Community**: Browse all users with search, filters, and pagination.
-
-👉 **Profile**: View user info, badges, and engagement history with pagination.
-
-👉 **Job Finder**: Discover jobs with filters and search, tailored to the user’s location.
-
-👉 **Tags Page**: List of all tags with question counts, filters, and pagination.
-
-👉 **Tag Details**: View questions by tag with search and pagination.
-
-👉 **Ask a Question**: Simple interface for posting new questions.
-
-👉 **Edit & Delete**: Update or remove questions and answers with validation and authorization.
-
-👉 **Global Search**: Find content across questions, users, tags, and more.
-
-👉 **Responsive Design**: Fully optimized for a seamless experience on desktops, tablets, and mobile devices.
-
-👉 **High Performance**: Fast loading and smooth interactions for an efficient user experience.
-
-and many more, including code architecture and reusability
-
-## <a name="quick-start">🤸 Quick Start</a>
+## <a name="quick-start"> Quick Start</a>
 
 Follow these steps to set up the project locally on your machine.
 
-**Prerequisites**
+### Prerequisites
 
 Make sure you have the following installed on your machine:
 
 - [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
+- [Node.js](https://nodejs.org/en) (v18 or higher)
 - [npm](https://www.npmjs.com/) (Node Package Manager)
 
-**Cloning the Repository**
+### Installation
+
+1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/JavaScript-Mastery-Pro/jsmasterypro_devflow.git
-cd jsmasterypro_devflow
+git clone https://github.com/rahulkhandait-sde/devflow.git
+cd devflow
 ```
 
-**Installation**
-
-Install the project dependencies using npm:
+2. **Install Dependencies**
 
 ```bash
 npm install
 ```
 
-**Set Up Environment Variables**
+3. **Set Up Environment Variables**
 
-Create a new file named `.env` in the root of your project and add the following content:
+Create a new file named `.env.local` in the root of your project and add the following content:
 
 ```env
-# Mongodb
-MONGODB_URI=
+# Database
+MONGODB_URI=your_mongodb_connection_string
 
-# OpenAI
-OPENAI_API_KEY=
+# Google AI (Gemini)
+GOOGLE_GENERATIVE_AI_API_KEY=your_google_ai_api_key
 
-# Rapid API
-NEXT_PUBLIC_RAPID_API_KEY=
+# RapidAPI for Jobs
+NEXT_PUBLIC_RAPID_API_KEY=your_rapid_api_key
 
-# Auth
-AUTH_GOOGLE_ID=
-AUTH_GOOGLE_SECRET=
-AUTH_GITHUB_ID=
-AUTH_GITHUB_SECRET=
-AUTH_SECRET=
-NEXTAUTH_URL=
+# Authentication
+AUTH_GOOGLE_ID=your_google_oauth_client_id
+AUTH_GOOGLE_SECRET=your_google_oauth_client_secret
+AUTH_GITHUB_ID=your_github_oauth_app_id
+AUTH_GITHUB_SECRET=your_github_oauth_app_secret
+AUTH_SECRET=your_nextauth_secret_key
+NEXTAUTH_URL=http://localhost:3001
 
-# Tiny Editor
-NEXT_PUBLIC_TINY_EDITOR_API_KEY=
+# Rich Text Editor
+NEXT_PUBLIC_TINY_EDITOR_API_KEY=your_tiny_editor_api_key
 
-NEXT_PUBLIC_SERVER_URL=
+# Application URLs
+NEXT_PUBLIC_SERVER_URL=http://localhost:3001
 
-NODE_ENV=
+# Environment
+NODE_ENV=development
 ```
 
-Replace the placeholder values with your actual credentials. You can obtain these credentials by signing up on the respective websites
+4. **Get Your API Keys**
 
-**Running the Project**
+- **MongoDB**: Create a free cluster at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+- **Google AI**: Get your API key from [Google AI Studio](https://aistudio.google.com/)
+- **RapidAPI**: Sign up at [RapidAPI](https://rapidapi.com/) for job search functionality
+- **Google OAuth**: Create credentials at [Google Cloud Console](https://console.cloud.google.com/)
+- **GitHub OAuth**: Create an OAuth app in your [GitHub Settings](https://github.com/settings/developers)
+- **TinyMCE**: Get your API key from [TinyMCE](https://www.tiny.cloud/)
+
+5. **Run the Development Server**
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
+Open [http://localhost:3001](http://localhost:3001) in your browser to view the project.
 
-## <a name="links">🔗 Assets</a>
+### Deployment Commands
 
-Assets used in the project can be found [here](https://drive.google.com/file/d/1nBru53dqIY4__A_WsburhpdiWUbdbncY/view?usp=sharing)
+```bash
+# Build the project
+npm run build
+
+# Start production server
+npm start
+
+# Deploy with Vercel CLI
+npx vercel --prod
+```
+
+## <a name="project-structure">🏗️ Project Structure</a>
+
+```
+devflow/
+├── app/                    # Next.js 15 App Router
+│   ├── (auth)/            # Authentication pages
+│   ├── (root)/            # Main application pages
+│   └── api/               # API routes
+├── components/            # Reusable React components
+│   ├── cards/            # Card components
+│   ├── forms/            # Form components
+│   ├── navigation/       # Navigation components
+│   └── ui/               # ShadCN UI components
+├── database/             # MongoDB models and schemas
+├── lib/                  # Utility functions and configurations
+│   ├── actions/          # Server actions
+│   └── validations.ts    # Zod schemas
+├── constants/            # Application constants
+├── types/               # TypeScript type definitions
+└── public/              # Static assets
+```
+
+## <a name="contributing">🤝 Contributing</a>
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
