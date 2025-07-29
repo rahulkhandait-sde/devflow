@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+/* === Color Variables (Figma Design System) === */
+:root {
+  /* Light Theme */
+  --primary-bg: #f0efef;
+  --secondary-bg: #ffffff;
+  --tertiary-btn: #4c43cd;
+  --tertiary-btn-alt: #2a2a2a;
+  --tertiary-btn-green: #25d366;
+  --text-primary: #191919;
+  --text-secondary: #191919;
+  --icon-primary: #f4f4f6;
+  --icon-secondary: #f4f4f6;
+  --progress: #25d366;
+
+  /* Font families from layout.tsx */
+  --font-sans: var(--font-satoshi-local, sans-serif);
+  --font-serif: var(--font-alegreya-google, serif);
+}
+
+[data-theme="dark"] {
+  --primary-bg: #191919;
+  --secondary-bg: #272727;
+  --tertiary-btn: #4c43cd;
+  --tertiary-btn-alt: #2a2a2a;
+  --tertiary-btn-green: #25d366;
+  --text-primary: #f4f4f6;
+  --text-secondary: #f4f4f6;
+  --icon-primary: #f4f4f6;
+  --icon-secondary: #f4f4f6;
+  --progress: #25d366;
+}
+
+body {
+  background: var(--primary-bg);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* === Typography Utilities (from Figma) === */
+.heading-1 {
+  font-family: var(--font-sans);
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+}
+.heading-2 {
+  font-family: var(--font-sans);
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+}
+.heading-3 {
+  font-family: var(--font-sans);
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.25px;
+  line-height: 1.1;
+}
+.heading-style {
+  font-family: var(--font-serif);
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+}
+.body-large {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.15px;
+}
+.body-main {
+  font-size: 16px;
+  font-weight: 400;
+}
+.button-text {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+/* === Spacing Utilities (from Figma) === */
+.section-padding {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.card-gap {
+  gap: 60px;
+}
+.card-radius {
+  border-radius: 24px;
+}
+.button-radius {
+  border-radius: 16px;
+}
+.button-padding {
+  padding: 17px 35px;
+}
+.avatar-round {
+  border-radius: 50%;
+}
+
+/* === Button Styles === */
+.btn-primary {
+  background: var(--tertiary-btn);
+  color: #fff;
+  border-radius: 16px;
+  padding: 17px 35px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 18px;
+  transition: background 0.2s;
+}
+.btn-primary:hover {
+  background: #372fa3;
+}
+.btn-green {
+  background: var(--tertiary-btn-green);
+  color: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 18px;
+  transition: background 0.2s;
+}
+.btn-green:hover {
+  background: #1da851;
+}
+
+/* === Card Styles === */
+.card {
+  background: var(--secondary-bg);
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+  padding: 32px;
+  transition: background 0.2s;
+}
+
+/* === Icon Styles === */
+.icon-primary {
+  color: var(--icon-primary);
+}
+.icon-secondary {
+  color: var(--icon-secondary);
+}
+
+/* === Progress Bar === */
+.progress-bar {
+  background: var(--progress);
+  height: 4px;
+  border-radius: 2px;
+}
+
+/* === Utility Classes for Theme Switching === */
+.bg-primary { background: var(--primary-bg); }
+.bg-secondary { background: var(--secondary-bg); }
+.bg-tertiary { background: var(--tertiary-btn); }
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+
+/* === Responsive Utilities (optional, for mobile) === */
+@media (max-width: 768px) {
+  .heading-1 { font-size: 36px; }
+  .heading-2 { font-size: 28px; }
+  .heading-3 { font-size: 20px; }
+  .section-padding { padding-top: 40px; padding-bottom: 40px; }
+  .card { padding: 16px; }
+  .button-text { font-size: 16px; }
+}
+
+/* === Hide Scrollbar Utility === */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
